@@ -14,3 +14,6 @@ origin  https://github.com/RakeshSim/mcp-crash-course.git (push)
 (mcp-crash-course) (base) rakeshyadav@Rakeshs-MacBook-Pro mcp-crash-course % git add .
 (mcp-crash-course) (base) rakeshyadav@Rakeshs-MacBook-Pro mcp-crash-course % git status
 (mcp-crash-course) (base) rakeshyadav@Rakeshs-MacBook-Pro mcp-crash-course % git push -u origin main
+
+server run:
+uv run mcp dev weather_server.py
