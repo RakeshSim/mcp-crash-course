@@ -112,6 +112,11 @@ client, shared by Gmail + Calendar), `token.json` (Gmail, created on first login
 `calendar_token.json` (Calendar, created on first login — separate from Gmail's
 because it's a different OAuth scope).
 
+Before either Gmail or Calendar will work, the matching API must be enabled in the
+same Google Cloud project: **"Gmail API"** and **"Google Calendar API"** specifically
+— not "CalDAV API", which is a different, unrelated API that's easy to pick by
+mistake in the API Library search.
+
 **Slack bot**: needs `channels:read` + `chat:write` scopes, and must be reinstalled
 to the workspace after adding scopes. `send_slack_message` auto-joins the target
 public channel before posting, so no manual `/invite` is needed per channel.
