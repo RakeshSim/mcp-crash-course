@@ -1,5 +1,9 @@
 # math_server.py
+import logging
+
 from mcp.server.fastmcp import FastMCP
+
+logging.basicConfig(level=logging.WARNING)  # silence MCP's per-request INFO logs
 
 mcp = FastMCP("Math")
 

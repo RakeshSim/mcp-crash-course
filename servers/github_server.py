@@ -1,4 +1,5 @@
 # github_server.py
+import logging
 import os
 
 import httpx
@@ -6,6 +7,7 @@ from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
 
 load_dotenv()
+logging.basicConfig(level=logging.WARNING)  # silence MCP/httpx per-request INFO logs
 
 mcp = FastMCP("GitHub")
 

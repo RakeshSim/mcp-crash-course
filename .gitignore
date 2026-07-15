@@ -1,3 +1,9 @@
 .env
 __pycache__/
 *.pyc
+credentials.json
+token.json
+calendar_token.json
+checkpoints.db
+checkpoints.db-shm
+checkpoints.db-wal
