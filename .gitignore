@@ -7,3 +7,4 @@ calendar_token.json
 checkpoints.db
 checkpoints.db-shm
 checkpoints.db-wal
+weather_server.log
